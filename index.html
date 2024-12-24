@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de regalos para walee</title>
+    <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Tienda de regalos para waleeee</h1>
+    </div>
+    <div class="nav">
+        <button onclick="location.href='https://mawaos.github.io/wale'">Regresar</button>
+        <button onclick="location.href='#productos'">Productos</button>
+        <button onclick="location.href='#about'">Sobre</button>
+    </div>
+    <h1 style="text-align: center;">Catalogo</h1>
+    <div class="container" id="productos"></div>
+    <div class="overlay" id="overlay"></div>
+    <div id="popup" class="popup">
+        <img id="popup-image" src="" alt="Producto">
+        <p id="popup-content"></p>
+        <p id="popup-price"></p>
+        <p id="popup-description"></p>
+        <div id="popup-attributes"></div> <!-- Contenedor para los atributos -->
+        <button onclick="cerrarPopup()">Cerrar</button>
+    </div>
+    <center id="about"><h1>¿Que es esto?</h1></center>
+    <div class="textdiv">
+    <text>
+        Este sitio es un pequeño sitio web que hice con un catalogo que va a estar presente en las cartas que te escriba,
+        en esta, puedes encontrar regalos y detallitos que considero lindo darte ^^
+    </text>
+    </div>
+    <script src="src/store.js"></script>
+</body>
+</html>

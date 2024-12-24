@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        to bottom,
+        rgb(135, 206, 235) 0%, 
+        rgb(176, 224, 230) 50%, 
+        rgb(240, 230, 140) 100%
+    ); /* Aplica el degradado de fondo */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.sun-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    opacity: 0; /* Comienza invisible */
+    transition: opacity 2s ease-in-out; /* Transición de opacidad */
+}
+
+.sun {
+    width: 100%;
+    height: 100%;
+    background-color: #FFD700; /* Amarillo dorado para el sol */
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 223, 0, 0.7);
+}
+
+.box {
+    background-color: rgba(240, 255, 240, 0.8); /* Verde muy claro semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: opacity 1s ease, filter 1s ease; /* Transición de opacidad y blur */
+}
+
+.btn {
+    background-color: #4682B4; /* Azul acero */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #5A9BD5; /* Azul acero claro */
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.hidden-text {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Transición de opacidad */
+}
+
+.show {
+    opacity: 1;
+}
+
+.text-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #10081b; /* Añade color del texto para mejor visibilidad */
+}
