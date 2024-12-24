@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Robux",
         "price": "1000 Robux.",
-        "image": "walegifts/robux.png",
+        "image": "robux.png",
         "code": "CODIGO1",
         "description": "Yo sé que te gusta mucho jugar roblox por ende, no hay mejor regalo que regalarte robux"
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "name": "Estrellas",
         "price": " ",
-        "image": "walegifts/star.png",
+        "image": "star.png",
         "code": "",
         "description": "Es una pequeña animacion que hice en algunos lenguajes de programacion, la hice despues de escribir la carta, sinceramente hecho con todo el cariño del mundo <3",
         "attributes": "<button onclick='window.location.href=\"star.html\";'>Ver animacion</button>"
